@@ -7,19 +7,11 @@ import 'package:amazon_cognito_identity_dart/cognito.dart';
 import 'package:amazon_cognito_identity_dart/sig_v4.dart';
 
 // Setup AWS User Pool Id & Client Id settings here:
-const _awsUserPoolId = 'us-west-2_MFmEVGDJ7';
-const _awsClientId = '74hog0oqdbnl85bt2ju5dbiosm';
+const _awsUserPoolId = 'us-west-2_xxxxxxxxx';
+const _awsClientId = 'xxxxxxxxxxxxxxxxxxxxxxx';
 
-const _identityPoolId = 'us-west-2:a5cb4d1c-c72d-4e78-8e23-51e28fb35926';
-
-// Setup endpoints here:
-//const _region = 'us-west-2';
-//const _endpoint = 'https://oy6vthxq8a.execute-api.us-west-2.amazonaws.com/prod';
-
+const _identityPoolId = 'us-west-2:xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx';
 final userPool = new CognitoUserPool(_awsUserPoolId, _awsClientId);
-
-//Map _data;
-//List _features;
 
 /// Extend CognitoStorage with Shared Preferences to persist account
 /// login sessions
